@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Covid-19 | ค้นโรงพยาบาลสนาม</title>
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" type="text/css" />
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Prompt:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
+    <!-- ajax-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/app.js"></script>
+  </head>
+  <body>
+      <!-- Navigation-->
+      <nav class="navbar navbar-light bg-light static-top">
+          <div class="container">
+              <a class="navbar-brand" href="#!">
+                  <h1>Covid-19</h1>
+              </a>
+              <a class="btn btn-primary" href="#login">เข้าสู่ระบบ</a>
+          </div>
+      </nav>
+    <!-- Masthead-->
+    <header class="masthead">
+        <div class="container position-relative">
+            <div class="row justify-content-center">
+                <div class="col-xl-6">
+                    <div>
+                      <!-- Page heading-->
+                          <h1 class="text-center text-white">ค้นหาโรงพยาบาลสนาม</h1>
+                          <form class="form-subscribe" id="contactForm">      
+                              <div class="SearchBox">
+                                  <div class="SearchBox-input">
+                                      <input type="text" placeholder="ค้นหาด้วยชื่อโรงพยาบาลสนาม..." name="search" id="search" class="SearchBox-input">
+                                      <div class="autocom-box" id="searchButton"></div>
+                                      <!-- here list are inserted from javascript -->
+                                      <div class="icon" id="icon"><b>ดูข้อมูล</b></div>
+                                      <ul class="Result" id="result"></ul>
+                                  </div>
+                                  <div class="row mt-4">
+                                      <div class="col">
+                                          <button class="btn btn-primary btn-lg btn-block" type="button">โรงพยาบาลทั้งหมด</button>
+                                      </div>
+                                      <div class="col">
+                                          <button class="btn btn-primary btn-lg btn-block" type="button">ค้นหาโรงพยาบาล</button>
+                                      </div>
+                                  </div> 
+                              </div>
+                          </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>        
+    <!-- Icons Grid-->
+    <section class="features-icons bg-light text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+                        <div class="features-icons-icon d-flex">
+                            <i class="bi-layout-text-sidebar m-auto text-primary"></i>
+                        </div>
+                        <h3>มีข้อมูลหลากหลาย</h3>
+                        <p class="lead mb-0">เรามีข้อมูลโรงพยาบาลหลากหลายพื้นที่ครอบคลุมทุกจังหวัด</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+                        <div class="features-icons-icon d-flex">
+                            <i class="bi-calendar2-check m-auto text-primary"></i>
+                        </div>
+                        <h3>อัปเดตข้อมูลเป็นปัจจุบัน</h3>
+                        <p class="lead mb-0">ข้อมูลมีการอัปเดตอย่างสม่ำเสมอเป็นปัจจุบัน</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="features-icons-item mx-auto mb-0 mb-lg-3">
+                        <div class="features-icons-icon d-flex">
+                            <i class="bi-pin-map m-auto text-primary"></i>
+                        </div>
+                        <h3>บอกตำแหน่งอย่างแม่นยำ</h3>
+                        <p class="lead mb-0">เข้าถึงGoogle Mapที่สามารถนำทางคุณไปยังโรงพยาบาลที่ต้องการได้</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Image Showcases-->
+    <section class="showcase">
+        <div class="container-fluid p-0">
+            <div class="row g-0">
+                <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('assets/img/bg-showcase-1.jpg')"></div>
+                <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+                    <h2>อย่าลืมฉีดวัคซีน</h2>
+                    <p class="lead mb-0">รัฐบาลได้จัดสรรวัคซีนโควิด 19 ให้กับประชาชนโดย ไม่มีค่าใช้จ่าย สามารถจองคิวฉีดวัคซีนได้ที่โรงพยาบาลใกล้บ้าน</p>
+                </div>
+            </div>
+            <div class="row g-0">
+                <div class="col-lg-6 text-white showcase-img" style="background-image: url('assets/img/bg-showcase-2.jpg')"></div>
+                <div class="col-lg-6 my-auto showcase-text">
+                    <h2>หมั่นติดตามข่าวสาร</h2>
+                    <p class="lead mb-0">สามารถติดตามข่าวสารได้จากข่าวทางโทรทัศน์ หรือโซเชียลมีเดียต่างๆ</p>
+                </div>
+            </div>
+            <div class="row g-0">
+                <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('assets/img/bg-showcase-3.jpg')"></div>
+                <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+                    <h2>คอยสังเกตตนเองตลอดเวลา</h2>
+                    <p class="lead mb-0">คอยสังเกตอาการของตนเองว่าใลก้เคียงกับอาการโควิด-19หรือไม่ หากสงสัยว่าเป็นหรือเป็นบุคคลสุ่มเสี่ยงที่อยู่ใกล้หรือสัมผัสกับผู้ติดเชื้อให้เข้าพบแพทย์ที่โรงพยาบาลทันที</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+  </body>
+</html>
